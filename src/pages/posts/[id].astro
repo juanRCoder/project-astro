@@ -1,0 +1,39 @@
+---
+import HomeLayout from "../../layouts/HomeLayout.astro";
+import { getPostsId } from "../../services/posts";
+import { type Post } from "../../interfaces/posts"; // importando la interfaz
+
+// desactivar el pre-renderizado estatico para que sea SSR.
+export const prerender = false;
+
+//Habilitar todas las rutas estaticas segun el id de los posts , solo para paginas de id conocidos.
+// export async function getStaticPaths() {
+//   const posts = await getPosts();
+//   return posts.map((post: Post) => ({
+//     params: { id: post.id.toString() },
+//   }));
+// }
+// const posts: Post[] = await getPosts();
+// const post = posts.find((p) => p.id.toString() === id);
+
+//Obtener el id del parametro
+const { id } = Astro.params;
+let post: Post | undefined;
+if (id) {
+  post = await getPostsId(id);
+}
+---
+
+<HomeLayout title=`Post ${id}`>
+  <section class="m-6">
+    <h1 class="text-xl">Post {id}:</h1>
+    <h4 class="text-orange-400 text-lg font-bold">{post?.title}</h4>
+    <p>{post?.body}</p>
+    <a href="/posts">
+      <button
+        class="bg-slate-300 text-black font-semibold hover:bg-orange-500 hover:text-white transition px-4 py-1 rounded-md mt-2"
+        >Volver</button
+      >
+    </a>
+  </section>
+</HomeLayout>

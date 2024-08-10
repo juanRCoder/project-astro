@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>Astro | Posts</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/_astro/index.DXXRcPOt.css"><script type="module" src="/_astro/hoisted.D-2wbxhY.js"></script></head> <body class="bg-stone-900 text-white"> <header> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="Z11DcSk" prefix="r0" component-url="/_astro/Navbar.WYHN-tEG.js" component-export="default" renderer-url="/_astro/client.BIGLHmRd.js" props="{&quot;data-astro-transition-persist&quot;:[0,&quot;astro-lylokyai-1&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Navbar&quot;,&quot;value&quot;:true}" data-astro-transition-persist="astro-lylokyai-1" await-children=""><nav class="flex bg-stone-800 items-center py-2 px-4"><div class="flex-1 flex gap-4"><a href="/" class="hover:text-orange-500">Home</a><a href="/launcher" class="hover:text-orange-500">Launcher</a><a href="/posts" class="hover:text-orange-500">posts</a></div><div class="flex gap-4"><button class="bg-orange-500 w-24 py-1 rounded-sm">Agregar</button><button class="bg-orange-500 w-24 py-1 rounded-sm">Resetear</button><p class="text-center text-lg">0</p></div></nav><!--astro:end--></astro-island> </header>  <h1>Posteos:</h1> <a href="/posts/1" class="text-violet-500 hover:text-violet-900 underline"> 1. sunt aut facere repellat provident occaecati excepturi optio reprehenderit </a>
+      <br><a href="/posts/2" class="text-violet-500 hover:text-violet-900 underline"> 2. qui est esse </a>
+      <br><a href="/posts/3" class="text-violet-500 hover:text-violet-900 underline"> 3. ea molestias quasi exercitationem repellat qui ipsa sit aut </a>
+      <br><a href="/posts/4" class="text-violet-500 hover:text-violet-900 underline"> 4. eum et est occaecati </a>
+      <br><a href="/posts/5" class="text-violet-500 hover:text-violet-900 underline"> 5. nesciunt quas odio </a>
+      <br><a href="/posts/6" class="text-violet-500 hover:text-violet-900 underline"> 6. dolorem eum magni eos aperiam quia </a>
+      <br><a href="/posts/7" class="text-violet-500 hover:text-violet-900 underline"> 7. magnam facilis autem </a>
+      <br><a href="/posts/8" class="text-violet-500 hover:text-violet-900 underline"> 8. dolorem dolore est ipsam </a>
+      <br><a href="/posts/9" class="text-violet-500 hover:text-violet-900 underline"> 9. nesciunt iure omnis dolorem tempora et accusantium </a>
+      <br><a href="/posts/10" class="text-violet-500 hover:text-violet-900 underline"> 10. optio molestias id quia eum </a>
+      <br><a href="/posts/11" class="text-violet-500 hover:text-violet-900 underline"> 11. et ea vero quia laudantium autem </a>
+      <br><a href="/posts/12" class="text-violet-500 hover:text-violet-900 underline"> 12. in quibusdam tempore odit est dolorem </a>
+      <br><a href="/posts/13" class="text-violet-500 hover:text-violet-900 underline"> 13. dolorum ut in voluptas mollitia et saepe quo animi </a>
+      <br><a href="/posts/14" class="text-violet-500 hover:text-violet-900 underline"> 14. voluptatem eligendi optio </a>
+      <br><a href="/posts/15" class="text-violet-500 hover:text-violet-900 underline"> 15. eveniet quod temporibus </a>
+      <br><a href="/posts/16" class="text-violet-500 hover:text-violet-900 underline"> 16. sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio </a>
+      <br><a href="/posts/17" class="text-violet-500 hover:text-violet-900 underline"> 17. fugit voluptas sed molestias voluptatem provident </a>
+      <br><a href="/posts/18" class="text-violet-500 hover:text-violet-900 underline"> 18. voluptate et itaque vero tempora molestiae </a>
+      <br><a href="/posts/19" class="text-violet-500 hover:text-violet-900 underline"> 19. adipisci placeat illum aut reiciendis qui </a>
+      <br><a href="/posts/20" class="text-violet-500 hover:text-violet-900 underline"> 20. doloribus ad provident suscipit at </a>
+      <br><a href="/posts/21" class="text-violet-500 hover:text-violet-900 underline"> 21. asperiores ea ipsam voluptatibus modi minima quia sint </a>
+      <br><a href="/posts/22" class="text-violet-500 hover:text-violet-900 underline"> 22. dolor sint quo a velit explicabo quia nam </a>
+      <br><a href="/posts/23" class="text-violet-500 hover:text-violet-900 underline"> 23. maxime id vitae nihil numquam </a>
+      <br><a href="/posts/24" class="text-violet-500 hover:text-violet-900 underline"> 24. autem hic labore sunt dolores incidunt </a>
+      <br><a href="/posts/25" class="text-violet-500 hover:text-violet-900 underline"> 25. rem alias distinctio quo quis </a>
+      <br><a href="/posts/26" class="text-violet-500 hover:text-violet-900 underline"> 26. est et quae odit qui non </a>
+      <br><a href="/posts/27" class="text-violet-500 hover:text-violet-900 underline"> 27. quasi id et eos tenetur aut quo autem </a>
+      <br><a href="/posts/28" class="text-violet-500 hover:text-violet-900 underline"> 28. delectus ullam et corporis nulla voluptas sequi </a>
+      <br><a href="/posts/29" class="text-violet-500 hover:text-violet-900 underline"> 29. iusto eius quod necessitatibus culpa ea </a>
+      <br><a href="/posts/30" class="text-violet-500 hover:text-violet-900 underline"> 30. a quo magni similique perferendis </a>
+      <br><a href="/posts/31" class="text-violet-500 hover:text-violet-900 underline"> 31. ullam ut quidem id aut vel consequuntur </a>
+      <br><a href="/posts/32" class="text-violet-500 hover:text-violet-900 underline"> 32. doloremque illum aliquid sunt </a>
+      <br><a href="/posts/33" class="text-violet-500 hover:text-violet-900 underline"> 33. qui explicabo molestiae dolorem </a>
+      <br><a href="/posts/34" class="text-violet-500 hover:text-violet-900 underline"> 34. magnam ut rerum iure </a>
+      <br><a href="/posts/35" class="text-violet-500 hover:text-violet-900 underline"> 35. id nihil consequatur molestias animi provident </a>
+      <br><a href="/posts/36" class="text-violet-500 hover:text-violet-900 underline"> 36. fuga nam accusamus voluptas reiciendis itaque </a>
+      <br><a href="/posts/37" class="text-violet-500 hover:text-violet-900 underline"> 37. provident vel ut sit ratione est </a>
+      <br><a href="/posts/38" class="text-violet-500 hover:text-violet-900 underline"> 38. explicabo et eos deleniti nostrum ab id repellendus </a>
+      <br><a href="/posts/39" class="text-violet-500 hover:text-violet-900 underline"> 39. eos dolorem iste accusantium est eaque quam </a>
+      <br><a href="/posts/40" class="text-violet-500 hover:text-violet-900 underline"> 40. enim quo cumque </a>
+      <br><a href="/posts/41" class="text-violet-500 hover:text-violet-900 underline"> 41. non est facere </a>
+      <br><a href="/posts/42" class="text-violet-500 hover:text-violet-900 underline"> 42. commodi ullam sint et excepturi error explicabo praesentium voluptas </a>
+      <br><a href="/posts/43" class="text-violet-500 hover:text-violet-900 underline"> 43. eligendi iste nostrum consequuntur adipisci praesentium sit beatae perferendis </a>
+      <br><a href="/posts/44" class="text-violet-500 hover:text-violet-900 underline"> 44. optio dolor molestias sit </a>
+      <br><a href="/posts/45" class="text-violet-500 hover:text-violet-900 underline"> 45. ut numquam possimus omnis eius suscipit laudantium iure </a>
+      <br><a href="/posts/46" class="text-violet-500 hover:text-violet-900 underline"> 46. aut quo modi neque nostrum ducimus </a>
+      <br><a href="/posts/47" class="text-violet-500 hover:text-violet-900 underline"> 47. quibusdam cumque rem aut deserunt </a>
+      <br><a href="/posts/48" class="text-violet-500 hover:text-violet-900 underline"> 48. ut voluptatem illum ea doloribus itaque eos </a>
+      <br><a href="/posts/49" class="text-violet-500 hover:text-violet-900 underline"> 49. laborum non sunt aut ut assumenda perspiciatis voluptas </a>
+      <br><a href="/posts/50" class="text-violet-500 hover:text-violet-900 underline"> 50. repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem </a>
+      <br><a href="/posts/51" class="text-violet-500 hover:text-violet-900 underline"> 51. soluta aliquam aperiam consequatur illo quis voluptas </a>
+      <br><a href="/posts/52" class="text-violet-500 hover:text-violet-900 underline"> 52. qui enim et consequuntur quia animi quis voluptate quibusdam </a>
+      <br><a href="/posts/53" class="text-violet-500 hover:text-violet-900 underline"> 53. ut quo aut ducimus alias </a>
+      <br><a href="/posts/54" class="text-violet-500 hover:text-violet-900 underline"> 54. sit asperiores ipsam eveniet odio non quia </a>
+      <br><a href="/posts/55" class="text-violet-500 hover:text-violet-900 underline"> 55. sit vel voluptatem et non libero </a>
+      <br><a href="/posts/56" class="text-violet-500 hover:text-violet-900 underline"> 56. qui et at rerum necessitatibus </a>
+      <br><a href="/posts/57" class="text-violet-500 hover:text-violet-900 underline"> 57. sed ab est est </a>
+      <br><a href="/posts/58" class="text-violet-500 hover:text-violet-900 underline"> 58. voluptatum itaque dolores nisi et quasi </a>
+      <br><a href="/posts/59" class="text-violet-500 hover:text-violet-900 underline"> 59. qui commodi dolor at maiores et quis id accusantium </a>
+      <br><a href="/posts/60" class="text-violet-500 hover:text-violet-900 underline"> 60. consequatur placeat omnis quisquam quia reprehenderit fugit veritatis facere </a>
+      <br><a href="/posts/61" class="text-violet-500 hover:text-violet-900 underline"> 61. voluptatem doloribus consectetur est ut ducimus </a>
+      <br><a href="/posts/62" class="text-violet-500 hover:text-violet-900 underline"> 62. beatae enim quia vel </a>
+      <br><a href="/posts/63" class="text-violet-500 hover:text-violet-900 underline"> 63. voluptas blanditiis repellendus animi ducimus error sapiente et suscipit </a>
+      <br><a href="/posts/64" class="text-violet-500 hover:text-violet-900 underline"> 64. et fugit quas eum in in aperiam quod </a>
+      <br><a href="/posts/65" class="text-violet-500 hover:text-violet-900 underline"> 65. consequatur id enim sunt et et </a>
+      <br><a href="/posts/66" class="text-violet-500 hover:text-violet-900 underline"> 66. repudiandae ea animi iusto </a>
+      <br><a href="/posts/67" class="text-violet-500 hover:text-violet-900 underline"> 67. aliquid eos sed fuga est maxime repellendus </a>
+      <br><a href="/posts/68" class="text-violet-500 hover:text-violet-900 underline"> 68. odio quis facere architecto reiciendis optio </a>
+      <br><a href="/posts/69" class="text-violet-500 hover:text-violet-900 underline"> 69. fugiat quod pariatur odit minima </a>
+      <br><a href="/posts/70" class="text-violet-500 hover:text-violet-900 underline"> 70. voluptatem laborum magni </a>
+      <br><a href="/posts/71" class="text-violet-500 hover:text-violet-900 underline"> 71. et iusto veniam et illum aut fuga </a>
+      <br><a href="/posts/72" class="text-violet-500 hover:text-violet-900 underline"> 72. sint hic doloribus consequatur eos non id </a>
+      <br><a href="/posts/73" class="text-violet-500 hover:text-violet-900 underline"> 73. consequuntur deleniti eos quia temporibus ab aliquid at </a>
+      <br><a href="/posts/74" class="text-violet-500 hover:text-violet-900 underline"> 74. enim unde ratione doloribus quas enim ut sit sapiente </a>
+      <br><a href="/posts/75" class="text-violet-500 hover:text-violet-900 underline"> 75. dignissimos eum dolor ut enim et delectus in </a>
+      <br><a href="/posts/76" class="text-violet-500 hover:text-violet-900 underline"> 76. doloremque officiis ad et non perferendis </a>
+      <br><a href="/posts/77" class="text-violet-500 hover:text-violet-900 underline"> 77. necessitatibus quasi exercitationem odio </a>
+      <br><a href="/posts/78" class="text-violet-500 hover:text-violet-900 underline"> 78. quam voluptatibus rerum veritatis </a>
+      <br><a href="/posts/79" class="text-violet-500 hover:text-violet-900 underline"> 79. pariatur consequatur quia magnam autem omnis non amet </a>
+      <br><a href="/posts/80" class="text-violet-500 hover:text-violet-900 underline"> 80. labore in ex et explicabo corporis aut quas </a>
+      <br><a href="/posts/81" class="text-violet-500 hover:text-violet-900 underline"> 81. tempora rem veritatis voluptas quo dolores vero </a>
+      <br><a href="/posts/82" class="text-violet-500 hover:text-violet-900 underline"> 82. laudantium voluptate suscipit sunt enim enim </a>
+      <br><a href="/posts/83" class="text-violet-500 hover:text-violet-900 underline"> 83. odit et voluptates doloribus alias odio et </a>
+      <br><a href="/posts/84" class="text-violet-500 hover:text-violet-900 underline"> 84. optio ipsam molestias necessitatibus occaecati facilis veritatis dolores aut </a>
+      <br><a href="/posts/85" class="text-violet-500 hover:text-violet-900 underline"> 85. dolore veritatis porro provident adipisci blanditiis et sunt </a>
+      <br><a href="/posts/86" class="text-violet-500 hover:text-violet-900 underline"> 86. placeat quia et porro iste </a>
+      <br><a href="/posts/87" class="text-violet-500 hover:text-violet-900 underline"> 87. nostrum quis quasi placeat </a>
+      <br><a href="/posts/88" class="text-violet-500 hover:text-violet-900 underline"> 88. sapiente omnis fugit eos </a>
+      <br><a href="/posts/89" class="text-violet-500 hover:text-violet-900 underline"> 89. sint soluta et vel magnam aut ut sed qui </a>
+      <br><a href="/posts/90" class="text-violet-500 hover:text-violet-900 underline"> 90. ad iusto omnis odit dolor voluptatibus </a>
+      <br><a href="/posts/91" class="text-violet-500 hover:text-violet-900 underline"> 91. aut amet sed </a>
+      <br><a href="/posts/92" class="text-violet-500 hover:text-violet-900 underline"> 92. ratione ex tenetur perferendis </a>
+      <br><a href="/posts/93" class="text-violet-500 hover:text-violet-900 underline"> 93. beatae soluta recusandae </a>
+      <br><a href="/posts/94" class="text-violet-500 hover:text-violet-900 underline"> 94. qui qui voluptates illo iste minima </a>
+      <br><a href="/posts/95" class="text-violet-500 hover:text-violet-900 underline"> 95. id minus libero illum nam ad officiis </a>
+      <br><a href="/posts/96" class="text-violet-500 hover:text-violet-900 underline"> 96. quaerat velit veniam amet cupiditate aut numquam ut sequi </a>
+      <br><a href="/posts/97" class="text-violet-500 hover:text-violet-900 underline"> 97. quas fugiat ut perspiciatis vero provident </a>
+      <br><a href="/posts/98" class="text-violet-500 hover:text-violet-900 underline"> 98. laboriosam dolor voluptates </a>
+      <br><a href="/posts/99" class="text-violet-500 hover:text-violet-900 underline"> 99. temporibus sit alias delectus eligendi possimus magni </a>
+      <br><a href="/posts/100" class="text-violet-500 hover:text-violet-900 underline"> 100. at nam consequatur ea labore ea harum </a>
+      <br> </body></html>

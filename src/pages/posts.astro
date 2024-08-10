@@ -1,0 +1,21 @@
+---
+import type { Post } from "../interfaces/posts";
+import HomeLayout from "../layouts/HomeLayout.astro";
+import { getPosts } from "../services/posts";
+
+const posteos: Post[] = await getPosts();
+---
+
+<HomeLayout title="Posts">
+  <h1>Posteos:</h1>
+  {
+    posteos.map((post) => (
+      <a href={`/posts/${post.id}`}
+       class="text-violet-500 hover:text-violet-900 underline"
+      >
+        {post.id}. {post.title}
+      </a>
+      <br />
+    ))
+  }
+</HomeLayout>
